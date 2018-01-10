@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -195,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -259,7 +259,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-09T19:51:20+08:00">
                 2018-01-09
@@ -415,10 +415,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -439,7 +439,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -505,7 +505,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -690,16 +690,16 @@
         var gitment = new Gitmint({
             id: window.location.pathname, 
             owner: 'chenjinting123# MUST HAVE, Your Github ID',
-            repo: 'chenjinting123.github.io',
+            repo: 'chenjinting123.github.io# MUST HAVE, The repo you use to store Gitment comments',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
             
-                client_secret: '3464abe8bc65aedcccbac7a5e4a06437e3a3da0a',
+                client_secret: '955fd2c16885e5abb7e1e79b203162c42fe13554# EITHER this or proxy_gateway, Github access secret token for the Gitment',
             
-                client_id: 'f2ab971d78121fed1b93'
+                client_id: '1ddce03cf52063f2f658# MUST HAVE, Github client id for the Gitment'
             }});
         gitment.render('gitment-container');
       }
